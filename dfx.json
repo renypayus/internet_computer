@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "internet_computer_backend": {
+      "main": "src/internet_computer_backend/main.mo",
+      "type": "motoko"
+    },
+    "internet_computer_frontend": {
+      "dependencies": [
+        "internet_computer_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/internet_computer_frontend/src/index.html"
+      },
+      "source": [
+        "src/internet_computer_frontend/assets",
+        "dist/internet_computer_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
