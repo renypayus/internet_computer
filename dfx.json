@@ -4,6 +4,10 @@
       "main": "src/internet_computer_backend/main.mo",
       "type": "motoko"
     },
+    "internet_identity" : {
+      "type": "pull",
+      "id": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+    },
     "internet_computer_frontend": {
       "dependencies": [
         "internet_computer_backend"
